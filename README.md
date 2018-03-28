@@ -13,5 +13,5 @@ Merges separate sqlite databases (that follows the AppDataCollect app's schema) 
    you've copied from any of the device.
 4. Run only import.bat for succeeding imports from other AppDataCollect.db's
 
-;angel;20180323
+Date Created: 20180323
 
