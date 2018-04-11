@@ -1,0 +1,44 @@
+--
+-- Create INSERT DATA sqlite scripts for each table row from a single database
+-- The created SQL script is compatible with MySQL or Sqlite databases
+-- Output file: insert_data.sql
+-- angel;20180411
+-- 
+
+.headers on
+
+.output insert_data.sql
+.mode insert users
+SELECT * FROM users;
+
+.mode insert farmer_info
+SELECT * FROM farmer_info;
+
+.mode insert farmland_setup
+SELECT * FROM farmland_setup;
+
+.mode insert fertilizer_basal
+SELECT * FROM fertilizer_basal;
+
+.mode insert fertilizer_top
+SELECT * FROM fertilizer_top;
+
+.mode insert fertilizer_side
+SELECT * FROM fertilizer_side;
+
+.mode insert photos
+SELECT * FROM photos;
+
+.mode insert cultural_mngt
+SELECT * FROM cultural_mngt;
+
+.mode insert pest_disease
+SELECT * FROM pest_disease;
+
+.mode insert production
+SELECT * FROM production;
+
+.mode insert notes
+SELECT * FROM notes;
+
+.quit

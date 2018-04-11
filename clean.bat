@@ -15,9 +15,8 @@ if "%resetAll%" == "" GOTO End
 GOTO Processing
 
 :Processing
- del header_*.sql
+ del *.sql
  del maindb.db
- del schema.sql
  GOTO End
  
 :End

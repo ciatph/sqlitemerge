@@ -13,7 +13,7 @@ set "dbfile="
 rem get the user-input database filename
 set /p dbfile="Enter sqlite database file to initialize:"
 
-if "%dbfile%" == "" GOTO Error
+if "%dbfile%" == "" set dbfile=databases/appdatacollect.db
 GOTO Processing
 
 :Processing
