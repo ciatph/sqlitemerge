@@ -1,7 +1,7 @@
 ::------------------------------------------------------
 :: Automatically merge all sqlite database files with 
-:: filename[dbName] from subdirectories numbered 
-:: 00, 01, ... 0N
+:: filename[dbName] from subdirectories in /databases 
+:: numbered 00, 01, ... 0N
 ::------------------------------------------------------
 
 @echo off 

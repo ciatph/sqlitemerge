@@ -1,0 +1,54 @@
+--
+-- Create INSERT DATA sqlite scripts for each table from a single database
+-- TO-DO: automate this using a bat script reading from a
+--   tables masterlist
+-- angel;20180322
+-- 
+
+.headers on
+
+.output header_users.sql
+.mode insert users
+SELECT * FROM users;
+
+.output header_farmer.sql
+.mode insert farmer_info
+SELECT * FROM farmer_info;
+
+.output header_farmland.sql
+.mode insert farmland_setup
+SELECT * FROM farmland_setup;
+
+.output header_f_basal.sql
+.mode insert fertilizer_basal
+SELECT * FROM fertilizer_basal;
+
+.output header_f_top.sql
+.mode insert fertilizer_top
+SELECT * FROM fertilizer_top;
+
+.output header_f_side.sql
+.mode insert fertilizer_side
+SELECT * FROM fertilizer_side;
+
+.output header_photos.sql
+.mode insert photos
+SELECT * FROM photos;
+
+.output header_cultural.sql
+.mode insert cultural_mngt
+SELECT * FROM cultural_mngt;
+
+.output header_pest_disease.sql
+.mode insert pest_disease
+SELECT * FROM pest_disease;
+
+.output header_production.sql
+.mode insert production
+SELECT * FROM production;
+
+.output header_notes.sql
+.mode insert notes
+SELECT * FROM notes;
+
+.quit
