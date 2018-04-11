@@ -1,3 +1,9 @@
+::----------------------------------------------------------
+:: Merge a single sqlite database file's data to the 
+:: maindb.db master database file
+:: angel;20180411
+::----------------------------------------------------------
+
 @echo off
 del /F /Q header_*.sql
 
