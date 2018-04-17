@@ -1,0 +1,3 @@
+-- list of constant SQL tables and filenames
+sel_soil_type
+sel_terrain_type
