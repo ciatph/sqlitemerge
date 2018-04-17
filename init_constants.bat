@@ -14,21 +14,36 @@ set fileRowCount=count.txt
 set settingsPath=settings/constants
 set /A count=0
 set /A index=0
+set /A indexList=0
 
 set fileName=%settingsPath%/sel_soil_type.txt
+set fileConstants=%settingsPath%/list_constants.txt
 
-GOTO InsertData
+GOTO ProcessTables
 
-:InsertData
+:: Read and process the constants SQL tables list
+:ProcessTables
   del *.sql
   del *.txt
 
+  SETLOCAL ENABLEDELAYEDEXPANSION
+  (for /f "tokens=*" %%x in (%fileConstants%) do (
+    set /A indexList += 1
+    (if !indexList! GEQ 2 (
+      CALL :InsertData %%x
+    ))
+  ))
+ EXIT /B 0
+
+
+:: Insert data as read from the SQL constants table list
+:InsertData
   :: set the sql script header
   echo PRAGMA foreign_keys=OFF; >> %sqlScript%
   echo BEGIN TRANSACTION; >> %sqlScript%
 
   SETLOCAL ENABLEDELAYEDEXPANSION
-  (for /f "tokens=*" %%x in (%fileName%) do (
+  (for /f "tokens=*" %%x in (%settingsPath%/%~1.txt) do (
     set /A index += 1
 
     (if !index! == 2 (
@@ -66,6 +81,7 @@ GOTO InsertData
 :Clean
   del *.sql
   del *.txt
+  timeout /t 4
  EXIT /B 0
 
 :END
