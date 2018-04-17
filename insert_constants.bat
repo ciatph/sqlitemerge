@@ -81,7 +81,7 @@ GOTO ProcessTables
 :Clean
   del *.sql
   del *.txt
-  timeout /t 4
+  timeout /t 3 /nobreak
  EXIT /B 0
 
 :END

@@ -25,6 +25,10 @@ GOTO Processing
 
  echo Creating table for constants...
  sqlite3 maindb.db < settings/constants/create_tables_constants.sql
+
+ echo Inserting data to constant tables...
+ timeout /t 7 /nobreak
+ insert_constants
  
  GOTO End
 
