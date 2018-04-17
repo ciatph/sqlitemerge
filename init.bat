@@ -24,7 +24,7 @@ GOTO Processing
  sqlite3 maindb.db < settings/schema_sqlite.sql
 
  echo Creating table for constants...
- sqlite3 maindb.db < settings/create_tables_constants.sql
+ sqlite3 maindb.db < settings/constants/create_tables_constants.sql
  
  GOTO End
 
