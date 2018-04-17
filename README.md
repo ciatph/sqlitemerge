@@ -24,11 +24,9 @@ See /databases/appdatacollect.db for sample sqlite database that follows the for
    you've copied from any of the device.   
 5. Run only import.bat for succeeding imports from other AppDataCollect.db's
 
-
 ## Sqlite Database Files
 You can request for access to the (5) CIAT devices' sqlite databases here, which are regularly updated here:
 https://ciatph@bitbucket.org/ciatph/data.git
 
 Date Created: 20180323<br>
 Date Modified: 20180411
-
