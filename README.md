@@ -26,7 +26,7 @@ See /databases/appdatacollect.db for sample sqlite database that follows the for
 
 
 ## Sqlite Database Files
-You can request for access to the (5) CIAT devices' sqlite databases here, which are regularly updated here:
+You can request for access to the (5) CIAT devices' sqlite databases, which are regularly updated here:
 https://ciatph@bitbucket.org/ciatph/data.git
 
 Date Created: 20180323<br>
