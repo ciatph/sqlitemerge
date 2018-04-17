@@ -1,0 +1,6 @@
+-- table name
+sel_mites
+-- contents
+Red mites
+Green mites-top leaves
+Others

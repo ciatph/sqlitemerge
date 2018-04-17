@@ -1,0 +1,10 @@
+-- table name
+sel_soil_type
+-- contents
+Clay
+Sandy
+Loam
+Silt
+Sandy Loam
+Clay Loam
+Others

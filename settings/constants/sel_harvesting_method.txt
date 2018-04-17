@@ -1,0 +1,6 @@
+-- table name
+sel_harvesting_method
+-- contents
+Manual
+Mechanical
+Others

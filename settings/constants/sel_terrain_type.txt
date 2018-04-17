@@ -1,0 +1,9 @@
+-- table name
+sel_terrain_type
+-- contents
+Flat
+Gently Rolling
+Moderately Rolling
+Steep
+Very Steep
+Others

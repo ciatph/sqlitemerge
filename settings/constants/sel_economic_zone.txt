@@ -1,0 +1,7 @@
+-- table name
+sel_economic_zone
+-- contents
+Flood Plain
+Broad Plain
+Rolling/Hill
+Others

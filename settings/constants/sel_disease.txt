@@ -1,0 +1,5 @@
+-- table name
+sel_disease
+-- contents
+Observed
+N/A

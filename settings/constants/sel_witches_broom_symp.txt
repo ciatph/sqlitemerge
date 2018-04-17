@@ -1,0 +1,7 @@
+-- table name
+sel_witches_broom_symp
+-- contents
+Leaf proliferation
+Stunting
+Yellowing
+Others

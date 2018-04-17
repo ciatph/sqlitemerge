@@ -1,0 +1,7 @@
+-- table name
+sel_mealy_bugs
+-- contents
+Longtail
+Shortail
+Pink
+Others

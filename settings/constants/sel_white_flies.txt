@@ -1,0 +1,6 @@
+-- table name
+sel_white_flies
+-- contents
+Spiraling white flies
+Bemisia whiteflies
+Others
