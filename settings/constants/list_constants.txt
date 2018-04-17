@@ -1,3 +1,17 @@
 -- list of constant SQL tables and filenames
 sel_soil_type
 sel_terrain_type
+sel_crop_establishment_method
+sel_variety_infested
+sel_pesticide_dose
+sel_pesticide_type
+sel_source_type
+sel_economic_zone
+sel_fertilizer_type
+sel_white_flies
+sel_mites
+sel_mealy_bugs
+sel_witches_broom_symp
+sel_disease
+sel_degree_infestation
+sel_harvesting_method

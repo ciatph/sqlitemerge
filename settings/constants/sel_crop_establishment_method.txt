@@ -1,0 +1,7 @@
+-- table name
+sel_crop_establishment_method
+-- contents
+horizontal
+vertical
+diagonal
+others

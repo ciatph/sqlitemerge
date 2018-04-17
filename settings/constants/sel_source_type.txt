@@ -1,0 +1,6 @@
+-- table name
+sel_source_type
+-- contents
+Seed producer
+Community seedbank
+Others

@@ -1,0 +1,7 @@
+-- table name
+sel_pesticide_dose
+-- contents
+1 Knapsack Sprayer (16L)
+2 Knapsack Sprayer (16L)
+3 Knapsack Sprayer (16L)
+Others

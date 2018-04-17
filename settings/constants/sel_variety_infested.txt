@@ -1,0 +1,10 @@
+-- table name
+sel_variety_infested
+-- contents
+KU50
+Rayong 72
+Rayong 5
+Golden Yellow
+Lakan 1
+Sultan
+Others
