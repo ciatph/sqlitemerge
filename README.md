@@ -4,14 +4,14 @@ See /databases/appdatacollect.db for sample sqlite database that follows the for
 
 ## PREREQUISITES
 * AppDataCollect.db's must be available in the /databases directory. <br>
-  See the section _**Sqlite Database Files**_.
+  See the section _**Sqlite Database Files**_, or run **external.bat**. <br>
 * the files: commands.txt, commands_tables.txt and schema_sqlite.sql must be available in
   the /settings directory
 
 ## USAGE
 1. Run init.bat (1) time only, if there is no maindb.db file yet
 2. Grab a copy of any of the (5) CIAT devices' AppDataCollect.db.<br>
-   See the section _**Sqlite Database Files**_.
+   See the section _**Sqlite Database Files**_, or run **external.bat**. <br>
 3. Create sub directories inside /databases numbered 00, 01...0N. Put an AppDataCollect.db inside each. Sample directory and database file hierarchy:<br> 
 /databases -> <br>
 00/AppDataCollect.db<br>
