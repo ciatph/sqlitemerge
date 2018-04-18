@@ -16,7 +16,6 @@ set /A count=0
 set /A index=0
 set /A indexList=0
 
-set fileName=%settingsPath%/sel_soil_type.txt
 set fileConstants=%settingsPath%/list_constants.txt
 
 GOTO ProcessTables
