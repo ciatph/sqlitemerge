@@ -14,7 +14,7 @@ git rm -r databases
 timeout /t 3
 
 :: Forcibly delete the untracked /databases directory
-rmdir /S databases
+rmdir /S /Q databases
 
 ::git commit -m "Removed local /databases."
 ::timeout /t 3
@@ -34,4 +34,5 @@ timeout /t 3
 ::timeout /t 3
 
 :: restore GitHub HEAD /databases
+git checkout databases
 git reset HEAD databases
