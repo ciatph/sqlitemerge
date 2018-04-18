@@ -3,17 +3,21 @@ Merges separate sqlite databases (that follows the AppDataCollect app's schema) 
 See /databases/appdatacollect.db for sample sqlite database that follows the format.
 
 ## PREREQUISITES
-* The sqlite3 executable file must have been installed in your machine and is available globally
+* AppDataCollect.db's must be available in the /databases directory. <br>
+  See the section _**Sqlite Database Files**_.
 * the files: commands.txt, commands_tables.txt and schema_sqlite.sql must be available in
   the /settings directory
 
 ## USAGE
 1. Run init.bat (1) time only, if there is no maindb.db file yet
-2. Grab a copy of any of the devices' AppDataCollect.db
+2. Grab a copy of any of the (5) CIAT devices' AppDataCollect.db.<br>
+   See the section _**Sqlite Database Files**_.
 3. Create sub directories inside /databases numbered 00, 01...0N. Put an AppDataCollect.db inside each. Sample directory and database file hierarchy:<br> 
 /databases -> <br>
 00/AppDataCollect.db<br>
-01/AppDataCollect.db
+01/AppDataCollect.db<br>
+...<br>
+05/AppDataCollect.db
 4. Run merge.bat. 
 
 
@@ -29,4 +33,4 @@ You can request for access to the (5) CIAT devices' sqlite databases, which are 
 https://ciatph@bitbucket.org/ciatph/data.git
 
 Date Created: 20180323<br>
-Date Modified: 20180411
+Date Modified: 20180417

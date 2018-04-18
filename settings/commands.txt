@@ -1,7 +1,6 @@
 --
 -- Create INSERT DATA sqlite scripts for each table from a single database
--- TO-DO: automate this using a bat script reading from a
---   tables masterlist
+-- Output files: individual SQL insert data scriptsfor each specified table
 -- angel;20180322
 -- 
 
