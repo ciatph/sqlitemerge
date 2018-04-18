@@ -5,19 +5,20 @@
 
 @echo off
 
-rem clear the input variable
-set "resetAll="
+GOTO Main
 
-echo Are you sure you want to reset everything?
-set /p resetAll="";
+:Main
+  rem clear the input variable
+  set "resetAll="
 
-if "%resetAll%" == "" GOTO End
-GOTO Processing
+  echo Are you sure you want to reset everything?
+  set /p resetAll="";
 
-:Processing
- del *.sql
- del maindb.db
- GOTO End
+  if "%resetAll%" == "" GOTO End
+  
+  del *.sql
+  del maindb.db
+EXIT /B 0
  
 :End
  pause;

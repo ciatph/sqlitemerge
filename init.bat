@@ -7,30 +7,66 @@
 
 @echo off
 
-rem clear the input variable
-set "dbfile="
+:: settings path
+set settingsPath=settings/constants
 
-rem get the user-input database filename
-set /p dbfile="Enter sqlite database file to initialize:"
+:: merged database filename
+set masterdb="maindb.db"
 
-if "%dbfile%" == "" set dbfile=databases/appdatacollect.db
-GOTO Processing
+:: create tables script filename
+set sqlScript="create_tables_constants.sql"
 
-:Processing
- echo Processing %dbfile%...
- :: sqlite3 %dbfile% > settings/schema.sql .schema
+:: list of constant SQL tables to create
+set fileConstants=%settingsPath%/list_constants.txt
+
+GOTO Main
+
+:Main
+  rem clear the input variable
+  set "dbfile="
+
+  set /A index=0
+
+  rem get the user-input database filename
+  set /p dbfile="Enter sqlite database file to initialize:"
+
+  if "%dbfile%" == "" set dbfile=databases/appdatacollect.db
+  echo Processing %dbfile%...
+
+  echo Creating new master database "maindb.db"...
+  sqlite3 maindb.db < settings/schema_sqlite.sql
+
+  GOTO CreateConstants
+EXIT /B 0
  
- echo Creating new master database "maindb.db"...
- sqlite3 maindb.db < settings/schema_sqlite.sql
-
- echo Creating table for constants...
- sqlite3 maindb.db < settings/constants/create_tables_constants.sql
-
- echo Inserting data to constant tables...
- timeout /t 7 /nobreak
- insert_constants
  
- GOTO End
+:: Create the constant SQL tables inside the merged database
+:CreateConstants 
+  timeout /t 5 /nobreak
+  echo Creating tables for constants...
+   
+  :: set the sql script header
+  echo PRAGMA foreign_keys=OFF; >> %sqlScript%
+  echo BEGIN TRANSACTION; >> %sqlScript%
+
+  SETLOCAL ENABLEDELAYEDEXPANSION
+  (for /f "tokens=*" %%x in (%fileConstants%) do (
+    set /A index += 1
+    
+    (if !index! GEQ 2 (
+      echo CREATE TABLE %%x ^(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT^)^; >> %sqlScript%
+    ))
+  ))
+
+  :: Set the sql script footer
+  echo COMMIT; >> %sqlScript%
+  timeout /t 5 /nobreak
+  sqlite3 %masterDb% < %sqlScript%  
+
+  :: Insert data into the created constant tables
+  echo Inserting data into constant tables...
+  insert_constants
+ EXIT /B 0
 
 :Error
  echo Enter a database file name and  try again

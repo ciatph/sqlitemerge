@@ -1,3 +1,8 @@
+--
+-- CREATE TABLE SQL scripts for constant tables.
+-- For reference only, this is internally created and run from init.bat
+-- angel;20180417
+-- 
 PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
 
