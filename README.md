@@ -19,6 +19,8 @@ See /databases/appdatacollect.db for sample sqlite database that follows the for
 ...<br>
 05/AppDataCollect.db
 4. Run merge.bat. 
+5. Run csv.bat to export consolidated farmland data from all sqlite databases.<br>
+Output: **export_csv.csv**
 
 
 ----------
@@ -26,7 +28,9 @@ See /databases/appdatacollect.db for sample sqlite database that follows the for
 ## ALTERNATIVE USAGE
 4. Run import.bat. Enter the filename of the sqlite database that 
    you've copied from any of the device.   
-5. Run only import.bat for succeeding imports from other AppDataCollect.db's
+5. Run only import.bat for succeeding imports from other AppDataCollect.db's.
+6. Run csv.bat to export consolidated farmland data from all sqlite databases.<br>
+Output: **export_csv.csv**
 
 ## Sqlite Database Files
 You can request for access to the (5) CIAT devices' sqlite databases, which are regularly updated here:
