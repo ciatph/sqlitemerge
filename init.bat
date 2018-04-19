@@ -28,7 +28,7 @@ GOTO Main
   set /A index=0
 
   rem get the user-input database filename
-  set /p dbfile="Enter sqlite database file to initialize:"
+  set /p dbfile="Enter sqlite database file to initialize (Press enter if none):"
 
   if "%dbfile%" == "" set dbfile=databases/appdatacollect.db
   echo Processing %dbfile%...
