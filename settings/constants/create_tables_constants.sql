@@ -54,4 +54,7 @@ CREATE TABLE sel_degree_infestation (id INTEGER PRIMARY KEY AUTOINCREMENT, name 
 -- harvesting method
 CREATE TABLE sel_harvesting_method (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT);
 
+-- municipality
+CREATE TABLE sel_municipality (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT);
+
 COMMIT;

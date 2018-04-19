@@ -1,0 +1,7 @@
+-- table name
+sel_municipality
+-- contents
+Cauayan
+Naguilan
+San Mariano
+Others

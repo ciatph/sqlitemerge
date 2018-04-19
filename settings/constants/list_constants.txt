@@ -15,3 +15,4 @@ sel_witches_broom_symp
 sel_disease
 sel_degree_infestation
 sel_harvesting_method
+sel_municipality
