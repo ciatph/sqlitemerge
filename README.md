@@ -1,6 +1,8 @@
 # sqlitemerge
 Merges separate sqlite databases (that follows the AppDataCollect app's schema) into (1) master sqlite database file.
-See /databases/appdatacollect.db for sample sqlite database that follows the format.
+See /databases/appdatacollect.db for sample sqlite database that follows the format.<br>
+
+Exports the merged farmland data into a CSV file.
 
 ## PREREQUISITES
 * PC using Windows OS
