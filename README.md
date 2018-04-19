@@ -3,6 +3,8 @@ Merges separate sqlite databases (that follows the AppDataCollect app's schema) 
 See /databases/appdatacollect.db for sample sqlite database that follows the format.
 
 ## PREREQUISITES
+* PC using Windows OS
+* [**GitBash**](https://git-scm.com/downloads) installed and available in your Windows PC.
 * AppDataCollect.db's must be available in the /databases directory. <br>
   See the section _**Sqlite Database Files**_, or run **externals.bat**. <br>
 * the files: commands.txt, commands_tables.txt and schema_sqlite.sql must be available in
