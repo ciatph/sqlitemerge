@@ -6,7 +6,7 @@ Exports the merged farmland data into a CSV file.
 
 ## PREREQUISITES
 * PC using Windows OS
-* [**GitBash**](https://git-scm.com/downloads) installed and available in your Windows PC.
+* [**GitBash**](https://git-scm.com/downloads) installed and available globally in your Windows PC.
 * AppDataCollect.db's must be available in the /databases directory. <br>
   See the section _**Sqlite Database Files**_, or run **externals.bat**. <br>
 * the files: commands.txt, commands_tables.txt and schema_sqlite.sql must be available in
@@ -21,7 +21,8 @@ Exports the merged farmland data into a CSV file.
 00/AppDataCollect.db<br>
 01/AppDataCollect.db<br>
 ...<br>
-05/AppDataCollect.db
+05/AppDataCollect.db<br>
+(Skip this step if you are able to run **externals.bat** from Step no. #2.)
 4. Run merge.bat. 
 5. Run csv.bat to export consolidated farmland data from all sqlite databases.<br>
 Output: **export_csv.csv**
