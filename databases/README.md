@@ -8,10 +8,11 @@ its own directory numbered 00, 01, ... 0N
 - 00 - CIAT
 - 01 - HM1
 - 02 - HM2
-- 03 - HM4
+- 03 - HM3
 - 04 - Pass
 
 **final directory hierarchy:**
+
 - /00/AppDataCollect.db
 - /01/AppDataCollect.db
 - /02/AppDataCollect.db
