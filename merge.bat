@@ -7,7 +7,7 @@
 @echo off 
 :: maximum number of directories to traverse
 :: starts at 00, 01, ... 0N
-set /A maxDir=5
+set /A maxDir=6
 
 :: maximum number of wait interval in seconds
 :: to process next database file
