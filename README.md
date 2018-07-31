@@ -6,6 +6,7 @@ Exports the merged farmland data into a CSV file.
 
 ## PREREQUISITES
 * PC using Windows OS
+* For fast and optimal data processing, please run the windows batch scripts in an SSD.
 * [**GitBash**](https://git-scm.com/downloads) installed and available globally in your Windows PC.
 * AppDataCollect.db's must be available in the /databases directory. <br>
   See the section _**Sqlite Database Files**_, or run **externals.bat**. <br>
@@ -42,4 +43,4 @@ You can request for access to the (5) CIAT devices' sqlite databases, which are 
 https://ciatph@bitbucket.org/ciatph/data.git
 
 Date Created: 20180323<br>
-Date Modified: 20180417
+Date Modified: 20180731
